@@ -53,7 +53,6 @@ class DQN(nn.Module):
         with torch.no_grad():
             q_max, _ = self.qnet_target(ns).max(dim=-1, keepdims=True)
             q_target = r + self.gamma * q_max * (1 - done)
-
         q_val = self.qnet(s).gather(1, a)
         loss = self.criteria(q_val, q_target)
 
