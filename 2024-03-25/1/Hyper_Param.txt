@@ -1,0 +1,19 @@
+today: 2024-03-25
+discount_factor: 0.95
+learning_rate: 0.001
+epsilon: 1
+epsilon_decay_rate: 0.9999
+epsilon_min: 0.0001
+batch_size: 256
+train_start: 2000
+num_episode: 50000
+memory_size: 100000
+target_update_interval: 5
+print_every: 100
+num_neurons: [64, 64, 64]
+step_max: 200
+vw_max: 7
+Saved_using: False
+MODEL_PATH: saved_model
+MODEL_NAME: model_(227, 1001.0).h5
+window_size: 1000
